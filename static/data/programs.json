@@ -1,0 +1,719 @@
+
+{
+  "metadata": {
+    "name": "Hawaii Public Assistance Programs",
+    "version": "1.0.0",
+    "jurisdiction": "Hawaii",
+    "last_updated": "2026-11-11",
+    "program_count": 27,
+    "currency": "USD",
+    "purpose": "Help Hawaii residents discover public assistance programs and understand their general eligibility requirements.",
+    "disclaimer": "Eligibility summaries are informational. The administering agency determines final eligibility. Income limits, funding, application periods, and program rules may change.",
+    "verification_policy": "Do not treat missing eligibility details as evidence that an applicant qualifies. Verify current requirements with the administering agency."
+  },
+  "programs": [
+    {
+      "id": "snap",
+      "name": "Supplemental Nutrition Assistance Program",
+      "abbreviation": "SNAP",
+      "category": "Food",
+      "agency": "Hawaii Department of Human Services",
+      "description": "Provides monthly food purchasing assistance to eligible households.",
+      "benefit_type": "Monthly food benefits through EBT",
+      "eligibility": {
+        "population": "Low-income households",
+        "residency": "Hawaii residency requirements apply.",
+        "income_test": "Household income is evaluated using applicable gross and net income standards, household size, and deductions.",
+        "other_requirements": [
+          "Must meet applicable citizenship or immigration requirements.",
+          "Must provide required household and financial information.",
+          "Work requirements may apply to certain adults."
+        ],
+        "age_requirement": "No general minimum age for household participation."
+      },
+      "application_url": "https://pais-benefits.dhs.hawaii.gov/",
+      "source_url": "https://humanservices.hawaii.gov/bessd/snap/",
+      "income_limits": {
+        "effective_date": "2026-10-01",
+        "standard_gross_monthly_130_percent_fpl": {
+          "1": 1989,
+          "2": 2697,
+          "3": 3404,
+          "4": 4112,
+          "5": 4819,
+          "6": 5527,
+          "7": 6234,
+          "8": 6941,
+          "additional_person": 708
+        },
+        "broad_based_categorical_eligibility_gross_monthly_200_percent_fpl": {
+          "1": 3060,
+          "2": 4150,
+          "3": 5238,
+          "4": 6326,
+          "5": 7414,
+          "6": 8502,
+          "7": 9590,
+          "8": 10680,
+          "additional_person": 1090
+        },
+        "net_monthly_100_percent_fpl": {
+          "1": 1530,
+          "2": 2075,
+          "3": 2619,
+          "4": 3163,
+          "5": 3707,
+          "6": 4251,
+          "7": 4795,
+          "8": 5340,
+          "additional_person": 545
+        },
+        "notes": "These are published screening standards, not a complete eligibility determination. Applicable income tests and deductions depend on the household's circumstances."
+      },
+      "verification": "Official source provides current income tables.",
+      "status": "active"
+    },
+    {
+      "id": "tanf",
+      "name": "Temporary Assistance for Needy Families",
+      "abbreviation": "TANF",
+      "category": "Cash Assistance",
+      "agency": "Hawaii Department of Human Services",
+      "description": "Provides temporary financial assistance to eligible families with dependent children.",
+      "benefit_type": "Monthly cash assistance",
+      "eligibility": {
+        "population": "Eligible families with dependent children",
+        "household": "Must meet program rules for a family with a dependent child.",
+        "income_test": "Household income is evaluated under current DHS financial standards.",
+        "other_requirements": [
+          "Must meet applicable citizenship and residency requirements.",
+          "Parents or caretakers may need to participate in employment-related activities.",
+          "Child support cooperation may be required, subject to applicable exceptions.",
+          "Must provide required documentation."
+        ]
+      },
+      "application_url": "https://pais-benefits.dhs.hawaii.gov/",
+      "source_url": "https://humanservices.hawaii.gov/bessd/tanf/",
+      "income_limits": null,
+      "verification": "Current numerical income thresholds require confirmation with DHS. Do not use historical poverty figures as current limits.",
+      "status": "active"
+    },
+    {
+      "id": "taonf",
+      "name": "Temporary Assistance for Other Needy Families",
+      "abbreviation": "TAONF",
+      "category": "Cash Assistance",
+      "agency": "Hawaii Department of Human Services",
+      "description": "Provides state-funded financial assistance to certain needy families who do not qualify for federal TANF because of citizenship status.",
+      "benefit_type": "Monthly cash assistance",
+      "eligibility": {
+        "population": "Eligible families with dependent children",
+        "income_test": "Household financial circumstances are evaluated under applicable DHS rules.",
+        "other_requirements": [
+          "Designed for certain families ineligible for federal TANF because of citizenship status.",
+          "Must meet applicable family, income, and residency requirements.",
+          "Employment-related participation requirements may apply."
+        ]
+      },
+      "application_url": "https://pais-benefits.dhs.hawaii.gov/",
+      "source_url": "https://humanservices.hawaii.gov/bessd/tanf/",
+      "income_limits": null,
+      "verification": "Confirm current eligibility and citizenship rules with DHS.",
+      "status": "active"
+    },
+    {
+      "id": "general-assistance",
+      "name": "General Assistance",
+      "abbreviation": "GA",
+      "category": "Cash Assistance",
+      "agency": "Hawaii Department of Human Services",
+      "description": "Provides temporary financial assistance for basic needs to qualifying adults who are temporarily unable to work.",
+      "benefit_type": "Monthly cash assistance",
+      "eligibility": {
+        "population": "Adults without minor dependents",
+        "minimum_age": 18,
+        "maximum_age": 64,
+        "income_test": "Must have little or no income and meet DHS financial requirements.",
+        "asset_limits": {
+          "individual": 2000,
+          "couple": 3000
+        },
+        "other_requirements": [
+          "Must have a temporary disability.",
+          "Must be certified by a DHS medical board as unable to engage in substantial employment of at least 30 hours per week for at least 60 days.",
+          "Must not qualify for a federal category of assistance."
+        ]
+      },
+      "application_url": "https://pais-benefits.dhs.hawaii.gov/",
+      "source_url": "https://humanservices.hawaii.gov/bessd/ga/",
+      "income_limits": null,
+      "verification": "Age, medical, and asset requirements published by DHS. Confirm current financial standards.",
+      "status": "active"
+    },
+    {
+      "id": "aabd",
+      "name": "Aid to the Aged, Blind, and Disabled",
+      "abbreviation": "AABD",
+      "category": "Cash Assistance",
+      "agency": "Hawaii Department of Human Services",
+      "description": "Provides financial assistance to qualifying elderly, blind, or disabled individuals who have limited resources.",
+      "benefit_type": "Cash assistance",
+      "eligibility": {
+        "population": "Older adults and individuals who meet applicable blindness or disability definitions",
+        "minimum_age_for_aged_category": 65,
+        "income_test": "Must have countable income below the applicable DHS threshold.",
+        "asset_limits": {
+          "individual": 2000,
+          "couple": 3000
+        },
+        "other_requirements": [
+          "Must meet applicable Social Security Administration disability or blindness definitions when applying under those categories.",
+          "Must meet residency and resource requirements.",
+          "Households with dependent children may be referred to TANF or TAONF."
+        ]
+      },
+      "application_url": "https://pais-benefits.dhs.hawaii.gov/",
+      "source_url": "https://humanservices.hawaii.gov/bessd/aabd/",
+      "income_limits": null,
+      "verification": "DHS currently displays an income threshold based on the 2006 Federal Poverty Level. This historical figure is deliberately not presented as a current dollar limit.",
+      "status": "active"
+    },
+    {
+      "id": "child-care-connection",
+      "name": "Child Care Connection Hawaii",
+      "abbreviation": "CCCH",
+      "category": "Child Care",
+      "agency": "Hawaii Department of Human Services",
+      "description": "Helps eligible families pay for child care while parents or caretakers work, attend school, or participate in job training.",
+      "benefit_type": "Child care subsidy",
+      "eligibility": {
+        "population": "Families needing assistance with child care",
+        "child_age": "Generally children under 13; exceptions may apply for older children with special needs.",
+        "income_test": "Generally based on gross household income and a percentage of state median income.",
+        "other_requirements": [
+          "Parents or caretakers generally must participate in an approved activity such as employment, education, or job training.",
+          "Additional activity requirements may apply to two-parent households.",
+          "Must use an eligible child care provider.",
+          "Must submit required financial and household documents."
+        ]
+      },
+      "application_url": "https://childcaresubsidyapplication.dhs.hawaii.gov/",
+      "source_url": "https://humanservices.hawaii.gov/bessd/child-care-program/",
+      "income_limits": null,
+      "verification": "Confirm current income tables, child age rules, and caretaker activity requirements with DHS.",
+      "status": "active"
+    },
+    {
+      "id": "preschool-open-doors",
+      "name": "Preschool Open Doors",
+      "abbreviation": "POD",
+      "category": "Education and Child Care",
+      "agency": "Hawaii Department of Human Services",
+      "description": "Helps eligible families pay for preschool tuition for young children.",
+      "benefit_type": "Preschool tuition subsidy",
+      "eligibility": {
+        "population": "Families with eligible preschool-age children",
+        "income_test": "Based on gross household income and applicable state median income standards.",
+        "other_requirements": [
+          "Child must meet the applicable age requirements for the program year.",
+          "Must meet household and residency requirements.",
+          "Must use an eligible preschool provider.",
+          "Applications are subject to program funding and priority rules."
+        ]
+      },
+      "application_url": "https://www.patchhawaii.org/programs/preschool-open-doors/",
+      "source_url": "https://humanservices.hawaii.gov/bessd/child-care-program/",
+      "income_limits": null,
+      "verification": "Application periods, age rules, and income thresholds vary by program year.",
+      "status": "active"
+    },
+    {
+      "id": "med-quest",
+      "name": "Hawaii Medicaid and Med-QUEST",
+      "abbreviation": "QUEST",
+      "category": "Healthcare",
+      "agency": "Hawaii Department of Human Services, Med-QUEST Division",
+      "description": "Provides Medicaid health coverage to eligible Hawaii residents, including qualifying children, adults, pregnant individuals, older adults, and people with disabilities.",
+      "benefit_type": "Medical insurance coverage",
+      "eligibility": {
+        "population": "Low-income residents and other eligible Medicaid categories",
+        "income_test": "Varies by eligibility group and household circumstances.",
+        "other_requirements": [
+          "Must meet applicable citizenship or immigration requirements.",
+          "Must meet residency requirements.",
+          "Some eligibility categories consider age, pregnancy, disability, or need for long-term care."
+        ]
+      },
+      "application_url": "https://medquest.hawaii.gov/",
+      "source_url": "https://medquest.hawaii.gov/",
+      "income_limits": null,
+      "verification": "Use the current Med-QUEST eligibility rules for the applicant's category.",
+      "status": "active"
+    },
+    {
+      "id": "wic",
+      "name": "Special Supplemental Nutrition Program for Women, Infants, and Children",
+      "abbreviation": "WIC",
+      "category": "Food and Healthcare",
+      "agency": "Hawaii Department of Health",
+      "description": "Provides nutritious foods, nutrition education, breastfeeding support, and health referrals.",
+      "benefit_type": "Supplemental food benefits and nutrition services",
+      "eligibility": {
+        "population": [
+          "Pregnant women",
+          "Breastfeeding women",
+          "Postpartum women",
+          "Infants",
+          "Children under age 5"
+        ],
+        "income_test": "Must meet federal WIC income guidelines. Participation in certain assistance programs may establish income eligibility.",
+        "other_requirements": [
+          "Must be a Hawaii resident.",
+          "Must have an applicable nutritional or medical risk determination.",
+          "Must complete an appointment with a local WIC agency."
+        ]
+      },
+      "application_url": "https://health.hawaii.gov/wic/",
+      "source_url": "https://health.hawaii.gov/wic/program_details/",
+      "income_limits": null,
+      "verification": "Official source confirms population, residency, income, and nutritional risk requirements. Current income tables should be retrieved separately.",
+      "status": "active"
+    },
+    {
+      "id": "h-heap",
+      "name": "Hawaii Home Energy Assistance Program",
+      "abbreviation": "H-HEAP",
+      "category": "Utilities",
+      "agency": "Hawaii Department of Human Services",
+      "description": "Provides one-time assistance toward eligible household electric or gas bills.",
+      "benefit_type": "One-time utility bill assistance",
+      "eligibility": {
+        "population": "Low-income Hawaii households",
+        "income_test": "Must meet applicable household income requirements.",
+        "other_requirements": [
+          "Must apply through the Community Action Agency serving the applicant's island.",
+          "Energy Crisis Intervention requires a utility disconnection notice or qualifying imminent disconnection.",
+          "Energy Credit applications are accepted during the designated annual application period.",
+          "Only one type of H-HEAP payment may be received per program year."
+        ]
+      },
+      "application_url": "https://humanservices.hawaii.gov/bessd/liheap/",
+      "source_url": "https://humanservices.hawaii.gov/bessd/liheap/",
+      "income_limits": null,
+      "program_components": [
+        {
+          "id": "energy-crisis-intervention",
+          "name": "Energy Crisis Intervention",
+          "description": "Assistance for eligible households facing utility disconnection.",
+          "application_period": "Year-round, subject to monthly funding availability."
+        },
+        {
+          "id": "energy-credit",
+          "name": "Energy Credit",
+          "description": "Assistance for eligible households that need help paying energy bills.",
+          "application_period": "June 1 through June 30, according to the published program schedule."
+        }
+      ],
+      "verification": "Confirm current income requirements, application dates, and funding with the island's Community Action Agency.",
+      "status": "active"
+    },
+    {
+      "id": "weatherization",
+      "name": "Weatherization Assistance Program",
+      "abbreviation": "WAP",
+      "category": "Utilities and Housing",
+      "agency": "Hawaii Department of Labor and Industrial Relations, Office of Community Services",
+      "description": "Helps eligible households reduce energy costs through home energy-efficiency improvements.",
+      "benefit_type": "Home weatherization services",
+      "eligibility": {
+        "population": "Low-income households",
+        "income_test": "Published program standard is generally within 200 percent of the Federal Poverty Guidelines.",
+        "other_requirements": [
+          "Priority may be given to older adults, people with disabilities, families with children, and households with high energy burdens.",
+          "Must meet applicable property and program requirements.",
+          "Must apply through the Community Action Agency serving the county."
+        ]
+      },
+      "application_url": "https://labor.hawaii.gov/ocs/service-programs-index/weatherization-assistance-program/",
+      "source_url": "https://labor.hawaii.gov/ocs/service-programs-index/weatherization-assistance-program/",
+      "income_limits": null,
+      "verification": "The published 200 percent poverty guideline standard should be checked against the current program year.",
+      "status": "active"
+    },
+    {
+      "id": "public-housing",
+      "name": "Public Housing Program",
+      "abbreviation": "PH",
+      "category": "Housing",
+      "agency": "Hawaii Public Housing Authority",
+      "description": "Provides affordable rental housing to eligible low-income households.",
+      "benefit_type": "Subsidized rental housing",
+      "eligibility": {
+        "population": "Low-income individuals and families",
+        "income_test": "Household income must meet applicable HUD income limits for the area and household size.",
+        "other_requirements": [
+          "Must meet applicable immigration or eligible status requirements.",
+          "Must provide household and income documentation.",
+          "Background and rental history screening may apply.",
+          "Must follow applicable public housing occupancy requirements."
+        ]
+      },
+      "application_url": "https://hpha.hawaii.gov/",
+      "source_url": "https://hpha.hawaii.gov/",
+      "income_limits": null,
+      "verification": "Income limits and waiting list status vary by location and property.",
+      "status": "active"
+    },
+    {
+      "id": "housing-choice-voucher",
+      "name": "Housing Choice Voucher Program",
+      "abbreviation": "HCV",
+      "category": "Housing",
+      "agency": "Hawaii Public Housing Authority and participating housing authorities",
+      "description": "Helps eligible low-income households rent housing in the private market by subsidizing part of the rent.",
+      "benefit_type": "Rental assistance voucher",
+      "eligibility": {
+        "population": "Low-income households",
+        "income_test": "Generally based on HUD income limits, household size, and local area.",
+        "other_requirements": [
+          "Must meet applicable HUD citizenship or eligible immigration requirements.",
+          "Must satisfy housing authority screening requirements.",
+          "Must locate a qualifying rental unit.",
+          "Must comply with program rent and occupancy rules."
+        ]
+      },
+      "application_url": "https://hpha.hawaii.gov/",
+      "source_url": "https://hpha.hawaii.gov/",
+      "income_limits": null,
+      "verification": "Waiting lists may be closed or open only during designated periods. Confirm with the administering housing authority.",
+      "status": "active"
+    },
+    {
+      "id": "homeless-services",
+      "name": "Hawaii Homeless Programs",
+      "abbreviation": "HPO",
+      "category": "Housing and Homelessness",
+      "agency": "Hawaii Department of Human Services, Homeless Programs Office",
+      "description": "Coordinates services and assistance for people experiencing homelessness or at risk of homelessness.",
+      "benefit_type": "Housing support and referrals",
+      "eligibility": {
+        "population": "Individuals and families experiencing homelessness or housing instability",
+        "income_test": "Depends on the specific service or provider.",
+        "other_requirements": [
+          "Some services require a documented housing crisis.",
+          "Some services use coordinated entry or assessment.",
+          "Availability depends on local providers and funding."
+        ]
+      },
+      "application_url": "https://humanservices.hawaii.gov/",
+      "source_url": "https://humanservices.hawaii.gov/",
+      "income_limits": null,
+      "verification": "This is a service directory entry, not one universal benefit. Identify the specific local program before assessing eligibility.",
+      "status": "active"
+    },
+    {
+      "id": "emergency-shelter",
+      "name": "Emergency Homeless Shelter Services",
+      "abbreviation": "EHS",
+      "category": "Housing and Homelessness",
+      "agency": "Hawaii Department of Human Services and contracted service providers",
+      "description": "Connects people experiencing homelessness with emergency shelter and related support services.",
+      "benefit_type": "Emergency shelter and referrals",
+      "eligibility": {
+        "population": "Individuals and families needing emergency shelter",
+        "income_test": "Varies by provider and shelter.",
+        "other_requirements": [
+          "Must meet the shelter's intake and placement requirements.",
+          "Some facilities serve specific populations.",
+          "Space and availability may be limited."
+        ]
+      },
+      "application_url": "https://humanservices.hawaii.gov/",
+      "source_url": "https://humanservices.hawaii.gov/",
+      "income_limits": null,
+      "verification": "Contact a local provider or Hawaii 211 for current shelter access information.",
+      "status": "active"
+    },
+    {
+      "id": "vocational-rehabilitation",
+      "name": "Vocational Rehabilitation Services",
+      "abbreviation": "DVR",
+      "category": "Disability and Employment",
+      "agency": "Hawaii Department of Human Services, Division of Vocational Rehabilitation",
+      "description": "Helps eligible people with disabilities prepare for, obtain, maintain, or regain employment.",
+      "benefit_type": "Employment services and support",
+      "eligibility": {
+        "population": "People with disabilities who need vocational rehabilitation services",
+        "income_test": "Not generally based on a low-income threshold for basic eligibility; financial participation may apply to some services.",
+        "other_requirements": [
+          "A physical or mental impairment must create an employment-related barrier.",
+          "The applicant must need vocational rehabilitation services to prepare for, secure, retain, or regain employment.",
+          "Must participate in the eligibility assessment and employment planning process."
+        ]
+      },
+      "application_url": "https://humanservices.hawaii.gov/",
+      "source_url": "https://humanservices.hawaii.gov/",
+      "income_limits": null,
+      "verification": "Confirm current intake and eligibility procedures with the Division of Vocational Rehabilitation.",
+      "status": "active"
+    },
+    {
+      "id": "wioa-adult",
+      "name": "Workforce Innovation and Opportunity Act Adult Program",
+      "abbreviation": "WIOA Adult",
+      "category": "Employment and Training",
+      "agency": "Hawaii Workforce Development Division and American Job Centers",
+      "description": "Provides employment and training services to eligible adults seeking employment or career advancement.",
+      "benefit_type": "Career services, training, and employment support",
+      "eligibility": {
+        "population": "Adults seeking employment or training",
+        "minimum_age": 18,
+        "income_test": "Some individualized training services prioritize low-income individuals and people facing employment barriers.",
+        "other_requirements": [
+          "Must meet applicable program enrollment requirements.",
+          "Must complete an assessment or career planning process when required.",
+          "Training support depends on eligibility and available funding."
+        ]
+      },
+      "application_url": "https://labor.hawaii.gov/wdd/",
+      "source_url": "https://labor.hawaii.gov/wdd/",
+      "income_limits": null,
+      "verification": "Confirm local enrollment rules and current training funding with an American Job Center.",
+      "status": "active"
+    },
+    {
+      "id": "wioa-youth",
+      "name": "Workforce Innovation and Opportunity Act Youth Program",
+      "abbreviation": "WIOA Youth",
+      "category": "Youth Employment",
+      "agency": "Hawaii Workforce Development Division and local workforce development boards",
+      "description": "Provides education, career exploration, work experience, and employment support to eligible young people.",
+      "benefit_type": "Youth employment and career development services",
+      "eligibility": {
+        "population": "Eligible in-school and out-of-school youth",
+        "age_range": "Generally ages 14 through 24, depending on in-school or out-of-school status.",
+        "income_test": "Some eligibility pathways require low-income status; other statutory eligibility categories may apply.",
+        "other_requirements": [
+          "Must meet applicable education or employment status requirements.",
+          "Must meet at least one eligible youth barrier or program criterion.",
+          "Must complete intake and eligibility screening."
+        ]
+      },
+      "application_url": "https://labor.hawaii.gov/wdd/",
+      "source_url": "https://labor.hawaii.gov/wdd/",
+      "income_limits": null,
+      "verification": "Confirm local youth eligibility pathways and available services.",
+      "status": "active"
+    },
+    {
+      "id": "snap-employment-training",
+      "name": "SNAP Employment and Training",
+      "abbreviation": "SNAP E&T",
+      "category": "Employment and Training",
+      "agency": "Hawaii Department of Human Services",
+      "description": "Connects eligible SNAP participants with employment, education, and training services.",
+      "benefit_type": "Employment and training support",
+      "eligibility": {
+        "population": "Eligible SNAP participants",
+        "income_test": "Must meet SNAP participation requirements.",
+        "other_requirements": [
+          "Must be eligible for or participating in SNAP.",
+          "Must meet applicable program participation requirements.",
+          "Available activities and support depend on local providers."
+        ]
+      },
+      "application_url": "https://humanservices.hawaii.gov/bessd/",
+      "source_url": "https://humanservices.hawaii.gov/bessd/",
+      "income_limits": null,
+      "verification": "Confirm current referrals, participation rules, and provider availability with DHS.",
+      "status": "active"
+    },
+    {
+      "id": "first-to-work",
+      "name": "First-To-Work",
+      "abbreviation": "FTW",
+      "category": "Employment and Training",
+      "agency": "Hawaii Department of Human Services",
+      "description": "Provides employment preparation and work-related services to eligible financial assistance participants.",
+      "benefit_type": "Employment preparation and support",
+      "eligibility": {
+        "population": "Certain TANF and TAONF participants",
+        "income_test": "Eligibility is connected to qualifying financial assistance participation.",
+        "other_requirements": [
+          "Must meet applicable TANF or TAONF participation rules.",
+          "May require employment planning, training, job search, or work activities.",
+          "Specific exemptions and participation requirements depend on the household."
+        ]
+      },
+      "application_url": "https://humanservices.hawaii.gov/bessd/",
+      "source_url": "https://humanservices.hawaii.gov/bessd/",
+      "income_limits": null,
+      "verification": "Confirm current participation rules with DHS.",
+      "status": "active"
+    },
+    {
+      "id": "unemployment-insurance",
+      "name": "Hawaii Unemployment Insurance",
+      "abbreviation": "UI",
+      "category": "Employment and Income",
+      "agency": "Hawaii Department of Labor and Industrial Relations",
+      "description": "Provides temporary wage replacement to eligible workers who become unemployed through no fault of their own.",
+      "benefit_type": "Temporary unemployment payments",
+      "eligibility": {
+        "population": "Workers who have become unemployed or had qualifying reductions in work",
+        "income_test": "Must have sufficient qualifying wages during the applicable base period.",
+        "other_requirements": [
+          "Must be unemployed through no fault of their own under applicable law.",
+          "Must be able and available to work.",
+          "Must meet job search and weekly certification requirements unless exempt.",
+          "Must report earnings and other required information."
+        ]
+      },
+      "application_url": "https://uiclaims.hawaii.gov/",
+      "source_url": "https://labor.hawaii.gov/ui/",
+      "income_limits": null,
+      "verification": "Benefit amount and wage requirements depend on the applicable base period and current state rules.",
+      "status": "active"
+    },
+    {
+      "id": "refugee-cash-assistance",
+      "name": "Refugee Cash Assistance",
+      "abbreviation": "RCA",
+      "category": "Refugee Assistance",
+      "agency": "Hawaii Department of Human Services",
+      "description": "Provides temporary cash assistance to certain eligible refugees and other qualifying humanitarian populations who are not eligible for TANF.",
+      "benefit_type": "Temporary cash assistance",
+      "eligibility": {
+        "population": "Eligible refugees and certain other qualifying humanitarian immigrants",
+        "income_test": "Must meet applicable income and resource requirements.",
+        "other_requirements": [
+          "Must meet federal immigration category requirements.",
+          "Must meet applicable time-limit and residency rules.",
+          "Must not be eligible for TANF.",
+          "Employment services participation may be required."
+        ]
+      },
+      "application_url": "https://humanservices.hawaii.gov/",
+      "source_url": "https://humanservices.hawaii.gov/bessd/",
+      "income_limits": null,
+      "verification": "Confirm covered immigration categories, benefit duration, and current program availability with DHS.",
+      "status": "active"
+    },
+    {
+      "id": "refugee-medical-assistance",
+      "name": "Refugee Medical Assistance",
+      "abbreviation": "RMA",
+      "category": "Healthcare",
+      "agency": "Hawaii Department of Human Services",
+      "description": "Provides temporary medical coverage to certain eligible refugees and other qualifying humanitarian populations who do not qualify for Medicaid.",
+      "benefit_type": "Temporary medical coverage",
+      "eligibility": {
+        "population": "Eligible refugees and other federally recognized humanitarian populations",
+        "income_test": "Must meet applicable income requirements.",
+        "other_requirements": [
+          "Must meet federal immigration category requirements.",
+          "Must meet applicable arrival-date and time-limit rules.",
+          "Must not be eligible for Medicaid or other specified coverage."
+        ]
+      },
+      "application_url": "https://medquest.hawaii.gov/",
+      "source_url": "https://humanservices.hawaii.gov/",
+      "income_limits": null,
+      "verification": "Confirm current federal eligibility categories and Hawaii implementation with the administering agency.",
+      "status": "active"
+    },
+    {
+      "id": "school-meals",
+      "name": "National School Lunch and School Breakfast Programs",
+      "abbreviation": "NSLP / SBP",
+      "category": "Food and Education",
+      "agency": "Hawaii Department of Education",
+      "description": "Provides free or reduced-price school meals to eligible students at participating schools.",
+      "benefit_type": "School breakfast and lunch",
+      "eligibility": {
+        "population": "Students enrolled in participating schools",
+        "income_test": "Household income is compared with federal free and reduced-price meal guidelines.",
+        "other_requirements": [
+          "Some students qualify through direct certification based on participation in specified assistance programs.",
+          "School participation and local meal policies apply."
+        ]
+      },
+      "application_url": "https://www.hawaiipublicschools.org/",
+      "source_url": "https://www.hawaiipublicschools.org/",
+      "income_limits": null,
+      "verification": "Check current school-year income guidelines and school meal eligibility procedures.",
+      "status": "active"
+    },
+    {
+      "id": "head-start",
+      "name": "Head Start and Early Head Start",
+      "abbreviation": "HS / EHS",
+      "category": "Education and Child Development",
+      "agency": "U.S. Department of Health and Human Services and local grantees",
+      "description": "Provides early learning, development, health, nutrition, and family support services for eligible young children.",
+      "benefit_type": "Early childhood education and family services",
+      "eligibility": {
+        "population": "Pregnant individuals, infants, toddlers, and preschool-age children depending on the program.",
+        "income_test": "Generally prioritizes families with income at or below federal poverty guidelines.",
+        "other_requirements": [
+          "Children in foster care, families experiencing homelessness, and families receiving certain public assistance may qualify under specific rules.",
+          "Local program availability and enrollment priorities apply."
+        ]
+      },
+      "application_url": "https://headstart.gov/",
+      "source_url": "https://headstart.gov/",
+      "income_limits": null,
+      "verification": "Contact a local Hawaii Head Start grantee for current enrollment and priority rules.",
+      "status": "active"
+    },
+    {
+      "id": "ssi",
+      "name": "Supplemental Security Income",
+      "abbreviation": "SSI",
+      "category": "Disability and Senior Assistance",
+      "agency": "U.S. Social Security Administration",
+      "description": "Provides monthly payments to eligible people with limited income and resources who are aged, blind, or disabled.",
+      "benefit_type": "Monthly federal cash payments",
+      "eligibility": {
+        "population": "People who are aged, blind, or disabled and have limited income and resources",
+        "age_requirement": "Generally age 65 or older for the aged category; younger applicants may qualify through disability or blindness.",
+        "income_test": "Countable income must fall within applicable SSI rules.",
+        "resource_test": "Countable resources must fall within applicable SSI limits.",
+        "other_requirements": [
+          "Must meet applicable citizenship or eligible noncitizen requirements.",
+          "Must meet federal residence and living arrangement rules.",
+          "Disability applicants must meet the Social Security Administration definition."
+        ]
+      },
+      "application_url": "https://www.ssa.gov/ssi/",
+      "source_url": "https://www.ssa.gov/ssi/",
+      "income_limits": null,
+      "verification": "Federal income, resource, and benefit rules can change. Check current SSA standards.",
+      "status": "active"
+    },
+    {
+      "id": "ssdi",
+      "name": "Social Security Disability Insurance",
+      "abbreviation": "SSDI",
+      "category": "Disability and Income",
+      "agency": "U.S. Social Security Administration",
+      "description": "Provides disability benefits to eligible workers who have sufficient Social Security work credits and meet the federal disability definition.",
+      "benefit_type": "Monthly disability insurance payments",
+      "eligibility": {
+        "population": "Workers with qualifying disabilities and sufficient work history",
+        "income_test": "Eligibility is not based on the same low-income test as SSI. Work activity and substantial gainful activity rules apply.",
+        "other_requirements": [
+          "Must have sufficient Social Security work credits, subject to age-related rules.",
+          "Must meet the Social Security Administration's disability definition.",
+          "The disability must meet the required duration criteria.",
+          "Certain family members may qualify for related benefits."
+        ]
+      },
+      "application_url": "https://www.ssa.gov/disability/",
+      "source_url": "https://www.ssa.gov/disability/",
+      "income_limits": null,
+      "verification": "Confirm current work credit, disability, and work activity rules with SSA.",
+      "status": "active"
+    }
+  ]
+}

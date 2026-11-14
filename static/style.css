@@ -1,0 +1,208 @@
+
+:root {
+	--pico-border-radius: 1rem;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+main {
+	display: flex;
+	height: 99.5vh;
+	height: 99.5dvh;
+	width: 100%;
+	min-width: 0;
+	overflow: hidden;
+}
+
+/* Chat layout */
+#chat {
+	height: 100%;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+}
+
+/* Chat history sidebar */
+#history {
+	height: 100%;
+	width: 20%;
+	min-width: 0;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--pico-secondary-color);
+	overflow-y: auto;
+	gap: 1rem;
+}
+
+/* Message container */
+.textLogs {
+	flex: 1;
+	min-height: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	white-space: pre-line;
+	overflow-y: auto;
+	gap: 0.75rem;
+	scroll-behavior: smooth;
+}
+
+/* Individual messages */
+.text p {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.text {
+	padding: 0.75rem 1.5rem !important;
+	margin: 0 !important;
+	height: min-content;
+	min-height: 0;
+	flex: 0 0 auto;
+	align-items: center;
+}
+
+/* User messages */
+.user {
+	text-align: end;
+	align-self: flex-end;
+}
+
+/* AI messages */
+.ai {
+	text-align: start;
+	align-self: flex-start;
+}
+
+/* Loading indicator */
+.loading {
+	align-self: flex-start;
+	flex-shrink: 0;
+}
+
+/* Input form */
+.input {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	width: 100%;
+}
+
+.input input {
+	flex: 1;
+	min-width: 0;
+	margin-bottom: 0;
+}
+
+.input button {
+	flex-shrink: 0;
+}
+
+/* Empty chat screen */
+.filler {
+	margin: auto;
+	text-align: center;
+}
+
+/* History cards */
+.historyCard {
+	margin: 0 !important;
+	padding: 0.75rem !important;
+	display: flex;
+	align-items: center;
+	flex: 0 0 auto;
+	height: auto;
+	min-height: 0;
+}
+
+.historyCard:hover {
+	background-color: color-mix(
+		in srgb,
+		var(--pico-card-background-color),
+		black 5%
+	);
+}
+
+.historyCard:active {
+	background-color: color-mix(
+		in srgb,
+		var(--pico-card-background-color),
+		black 10%
+	);
+}
+
+.text,
+.text.user,
+.text p,
+.text * {
+	height: auto !important;
+	min-height: 0 !important;
+	margin-bottom: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+#newChat {
+	margin-top: auto;
+}
+
+#horizontalGap {
+	height: 2rem;
+	background-color: transparent;
+	opacity: 1;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+	main {
+		height: 100dvh;
+		min-height: 0;
+	}
+
+	#chat {
+		width: 70%;
+		flex: 1;
+	}
+
+	#history {
+		width: 30%;
+	}
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+	main {
+		height: 100dvh;
+		width: 100%;
+		overflow: hidden;
+	}
+
+	#chat {
+		width: 100%;
+		height: 100%;
+		min-width: 0;
+		flex: 1;
+	}
+
+	#history {
+		display: none;
+	}
+
+	.text {
+		padding: 0.75rem 1rem !important;
+	}
+
+	.input {
+		gap: 6px;
+	}
+
+	.input button {
+		padding-inline: 0.75rem;
+	}
+
+	.textLogs {
+		overscroll-behavior: contain;
+	}
+}
